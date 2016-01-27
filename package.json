@@ -1,0 +1,27 @@
+{
+  "name": "node-metin2-rest-api",
+  "version": "0.0.1",
+  "description": "REST API for Metin2's game DB",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArcticRaz0r/node-metin2-rest-api"
+  },
+  "keywords": [
+    "metin2",
+    "mmorpg",
+    "rest",
+    "api",
+    "game",
+    "stats
+  ],
+  "author": "ArcticRaz0r <arctic.raz0r.mt2@gmail.com>",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/ArcticRaz0r/node-metin2-rest-api/issues"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "mysql": "0.15.x"
+  }
+}
