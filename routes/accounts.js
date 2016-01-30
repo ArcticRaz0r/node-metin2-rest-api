@@ -5,7 +5,7 @@ var router = express.Router();
  *	Accounts
  */
 
-//
+//User data
 router.get('/:login', function(req, req) {
 	//Checks if account exists
 	db.account.execute("SELECT * FROM account WHERE login=':username'", req.body, function(err, rows) {
@@ -45,9 +45,10 @@ router.post('/', function(req, res) {
 	});
 });
 
+//
 //TODO: add put('/:login')
 
-//Delete account
+//User removal
 router.delete('/:login', auth.isAdmin, function(req, res) {
 	db.account.query("DELETE FROM account WHERE login='?'", [req.params.login], function(err, result) {
 		if(err)

@@ -38,8 +38,10 @@ db.account = mysql.createConnection({
 	database: 'account'
 });
 
-app.use('/users', require('./routes/users'));
+app.use('/players', require('./routes/players'));
+app.use('/guilds', require('./routes/guilds'));
 app.use('/accounts', require('./routes/accounts'));
 app.use('/ranking', require('./routes/ranking'));
 
 app.listen(config.api.port);
+console.log("API opened on port " + config.api.port );
